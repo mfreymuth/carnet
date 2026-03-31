@@ -1,4 +1,4 @@
-# 🌱 carnet
+# carnet
 
 My digital garden: notes, ideas, and things I'm learning.
 
