@@ -72,8 +72,12 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.Citations(),
     ],
-    filters: [Plugin.RemoveDrafts()],
+    filters: [
+      Plugin.RemoveDrafts(),
+      Plugin.ExplicitPublish(),
+    ],
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
@@ -88,7 +92,6 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
       Plugin.CustomOgImages(),
     ],
   },
