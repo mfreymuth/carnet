@@ -6,3 +6,6 @@ public/
 !.dev.vars.example
 .env*
 !.env.example
+
+# obsidian files
+workspace.json
